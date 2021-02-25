@@ -14,8 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
-Route::get('/Home', function () {
-    return view('Home');
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/news', function () {
+    return view('news');
+});
+Route::get('/hidroponik', function () {
+    return view('hidroponik');
+});
+Route::get('/pengolahan_limbah', function () {
+    return view('pengolahan_limbah');
+});
+Route::get('/waroengceuipa', function () {
+    return view('waroengceuipa');
+});
+Route::get('/peternakan', function () {
+    return view('peternakan');
 });
